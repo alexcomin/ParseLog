@@ -4,8 +4,6 @@ from time import sleep
 import re
 from datetime import datetime
 
-sleep(3.0)
-
 def fill_dict(m_dictionary, m_key, in_value):
     m_dictionary[m_key] = list(map(sum, zip(m_dictionary.get(m_key, [0, 0]),
                                             [1, in_value])))
